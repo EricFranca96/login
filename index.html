@@ -24,12 +24,14 @@
     <link rel="stylesheet" href="/css/form-button.css">
     <link rel="stylesheet" href="/css/overlay-container.css">
     <link rel="stylesheet" href="/css/overlay.css">
+
+    <script src="/js/login.js" defer></script>
     <title>Login - Eric</title>
 </head>
 
 <body>
     <main>
-        <div class="login-container toggle">
+        <div class="login-container" id="login-container">
             <div class="form-container">
                 <form class="form form-login">
                     <h2 class="form-title">Entrar com</h2>
@@ -44,7 +46,7 @@
                         <input type="password" class="form-input" placeholder="Senha">
                     </div>
                     <a href="#" class="form-link">Esqueceu a senha?</a>
-                    <button class="form-button">Logar</button>
+                    <button type="button" class="form-button">Logar</button>
                 </form>
                 <form class="form form-register">
                     <h2 class="form-title">Criar Conta</h2>
@@ -59,19 +61,19 @@
                         <input type="email" class="form-input" placeholder="Email">
                         <input type="password" class="form-input" placeholder="senha">
                     </div>
-                    <button class="form-button">Cadastrar</button>
+                    <button type="button" class="form-button">Cadastrar</button>
                 </form>
             </div>
             <div class="overlay-container">
                 <div class="overlay">
                     <h2 class="form-title form-title-light">Já tem conta?</h2>
                     <p class="form-text">Para entrar na nossa plataforma faça login com suas informações</p>
-                    <button class="form-button form-button-light" >Entrar</button>
+                    <button class="form-button form-button-light" id="open-login">Entrar</button>
                 </div>
                 <div class="overlay">
                     <h2 class="form-title form-title-light">Olá Aluno!</h2>
                     <p class="form-text">Cadastre-se e comece a usar a nossa plataforma on-line</p>
-                    <button class="form-button form-button-light" >Cadastrar</button>
+                    <button class="form-button form-button-light" id="open-register">Cadastrar</button>
                 </div>
             </div>
         </div>

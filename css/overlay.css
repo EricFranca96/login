@@ -7,7 +7,11 @@
     align-items: center;
     padding: 40px;
     justify-content: space-evenly;
-
     background-color: var(--primary-color);
-    
+    transition: 1s;
+}
+
+.login-container.move .overlay:nth-child(2) {
+    z-index: -1;
+    opacity: 0;
 }

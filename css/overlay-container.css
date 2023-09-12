@@ -7,9 +7,10 @@
     color: var(--text-color-light);
     text-align: center;
     transform: translateX(100%);
+    z-index: 10;
     transition: 1s;
 }
 
-.login-container.toggle .overlay-container{
+.login-container.move .overlay-container{
     transform: translateX(0%);
 }
